@@ -1,0 +1,7 @@
+# Appendix - 6 syntex
+
+- IVI（In-Vehicle Infotainment，车载信息系统）
+- HMI（Human Machine Interface，人机交互界面）
+- ECU（Electronic Control Unit，电子控制单元）
+- ADAS（Advanced Driving Assistance System，高级驾驶辅助系统）
+- CAN（Controller Area Network，控制器局域网络）

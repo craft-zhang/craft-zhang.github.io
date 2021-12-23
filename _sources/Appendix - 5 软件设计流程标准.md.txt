@@ -1,0 +1,17 @@
+# Appendix - 5 软件设计流程标准(Draft)
+
+- Applying the V-Model in Automotive Software Development
+
+- ASPICE and ISO 26262: How does this Union Impact the Automotive Software Development Landscape
+
+- 42010-2011 - ISO/IEC/IEEE Systems and software engineering -- Architecture description
+
+- ISO 26262 SW Configuration and Packaging Process
+
+- EB SW Architecture for Autonomous Driving
+
+- ADTF (Automotive Data and Time-Triggered Framework)
+
+- Electronics Architecture and Software Technology - Architecture Description Language (EAST-ADL)
+
+- Nvidia Driveworks

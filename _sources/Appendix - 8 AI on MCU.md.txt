@@ -1,0 +1,12 @@
+# Appendix - 8 AI on MCU
+Machine Learning & AI on MCU
+nnom - A higher-level Neural Network library for microcontrollers.
+nn4mp
+Embedded Learning Library (ELL) - Microsoft's library to deploy intelligent machine-learned models onto resource constrained platforms and small single-board computers.
+Qualcomm Neural Processing SDK for AI - Libraries to developers run NN models on Snapdragon mobile platforms taking advantage of the CPU, GPU and/or DSP.
+CMSIS NN - A collection of efficient neural network kernels developed to maximize the performance and minimize the memory footprint of neural networks on Cortex-M processor cores.
+ARM Compute Library - Set of optimized functions for image processing, computer vision, and machine learning.
+uTensor - AI inference library based on mbed (an RTOS for ARM chipsets) and TensorFlow.
+EmbededAI - A library that provides elements of AI to C++ applications.
+kann - A lightweight C library for artificial neural networks.
+m2cgen - A CLI tool which allows to transpile trained classic ML models into a native code of various programming languages with zero dependencies including C.

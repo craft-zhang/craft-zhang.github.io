@@ -1,0 +1,15 @@
+# Appendix - 1 Misra C checker
+
+静态代码检查工具
+
+- gcc can enforce its (ANSI-compliance) checks if invoked with Code ```-ansi -pedantic -Wall -W_```。
+
+- [cppcheck](http://cppcheck.sourceforge.net) Running with ```--addon=misra``` or ```--addon=misra.py```。
+
+- 使用devops插件在流水线添加misra规则集，_如jerkins+codedex具体方法待研究_。
+
+- 手工实现 [LLVM static analyzer](http://clang-analyzer.llvm.org/checker_dev_manual.html) && How to Write a Checker in 24 Hours - Clang Static Analyzer && 2015-LPC-Clang-static-analyzer-kernel。
+
+- [付费软件](http://www.gimpel.com/html/pcl.htm)等。
+
+- HelixQAC/C++MISRA Parasoft C/C++test Automotive Compliance Pack

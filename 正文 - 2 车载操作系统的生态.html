@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>车载操作系统的生态(Draft) &mdash; 车载操作系统调研报告 v1.0.0.202111 文档</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="author" title="关于这些文档" href="about.html" />
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="车载操作系统的前沿" href="%E6%AD%A3%E6%96%87%20-%203%20%E8%BD%A6%E8%BD%BD%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%89%8D%E6%B2%BF.html" />
+    <link rel="prev" title="车载操作系统的分类" href="%E6%AD%A3%E6%96%87%20-%201%20%E8%BD%A6%E8%BD%BD%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%86%E7%B1%BB.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> 车载操作系统调研报告
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">目录:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="%E6%AD%A3%E6%96%87%20-%200%20%E8%BD%A6%E8%BD%BD%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%A0%87%E5%87%86.html">车载操作系统的标准</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E6%AD%A3%E6%96%87%20-%201%20%E8%BD%A6%E8%BD%BD%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%86%E7%B1%BB.html">车载操作系统的分类</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">车载操作系统的生态(Draft)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">大众</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#google">Google</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">华为</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">百度</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">阿里</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">腾讯</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="%E6%AD%A3%E6%96%87%20-%203%20%E8%BD%A6%E8%BD%BD%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%89%8D%E6%B2%BF.html">车载操作系统的前沿</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E6%AD%A3%E6%96%87%20-%204%20%E6%80%BB%E7%BB%93.html">总结</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">关于（提纲Draft）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Appendix%20-%201%20Misra%20C%20checker.html">Appendix - 1 Misra C checker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Appendix%20-%202%20Domains%E2%80%99%20Safety%20Standards.html">Appendix - 2 Domains’ Safety Standards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Appendix%20-%203%20AUTOSAR%20Software%20Framework.html">Appendix - 3 AUTOSAR Software Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Appendix%20-%204%20%E5%BC%82%E6%9E%84%E7%9B%B8%E5%85%B3.html">Appendix - 4 异构相关(Draft)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Appendix%20-%205%20%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%B5%81%E7%A8%8B%E6%A0%87%E5%87%86.html">Appendix - 5 软件设计流程标准(Draft)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">车载操作系统调研报告</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>车载操作系统的生态(Draft)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/正文 - 2 车载操作系统的生态.md.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="draft">
+<h1>车载操作系统的生态(Draft)<a class="headerlink" href="#draft" title="永久链接至标题"></a></h1>
+<p>TODO(zhangdanfeng&#64;cloudwalk.com):</p>
+<div class="section" id="id1">
+<h2>大众<a class="headerlink" href="#id1" title="永久链接至标题"></a></h2>
+<p>打造 VW.OS 平台，加快数字化转型</p>
+<p>总结：大众更加注重功能安全、框架标准化，采用 Linux、QNX、VxWorks 等多个 底层操作系统打造一体式平台，简化智能座舱、自动驾驶、车身控制</p>
+<p>等之间的交互。优 点：可充分利用各家供应商的已有技术优势实现快速转型。缺点：各家供应商标准接口、 协议并不统一，组建的系统过于复杂，仍</p>
+<p>高度依赖供应商。大众更加注重功能安全、框架标准化，采用多个底层操作系统打造一体式平台。</p>
+<p>大 众通过打造一个可运行多个底层系统（如 Linux、QNX、VxWorks）的 VW.OS 平台，简 化座舱和自动驾驶的交互技术。由于各家供应商标准接口和协</p>
+<p>议各不相同，高度依赖 AutoSAR 实现中间件标准化，因此产生大量庞大繁杂的模块、组件以支持来自不同供应 商的软件。此外，大众将建立</p>
+<p>Volkswagen Automotive Cloud 全球专属云服务后台，以实 现传统大众汽车向全新智能软件产品的转变。</p>
+<p>在软件定义汽车的大趋势下，大众软件部门正经历巨变。2019 年 2 月，大众成立新 软件部门“Digital Car&amp;Service”，致力于智能汽车云服务，并</p>
+<p>任命曾带领团队成功研发 大众 MEB 平台的 Christian Senger 作为部门负责人。2019 年 4 月，大众加入开源操作系 统 AGL 联盟，以开源方式打造</p>
+<p>通用操作系统。同年 6 月，大众准备联合 5,000 名数字专 家组成 Car.Software 部门，专注于软件操作系统“VW.OS”研发，加快数字化转型。大 众</p>
+<p>宣称 ID.3 将成为首款搭载 VW.OS 的量产车型，基于自有操作系统 VW.OS 的车型 ID.3，将具备 L3 自动驾驶能力，可以在高速公路和城市拥堵路段进</p>
+<p>行自动驾驶。且从 2025 年起，大众旗下所有新车型均将搭载 VW.OS，并通过该操作系统连接至大众汽车 云平台（与微软合作开发）。</p>
+</div>
+<div class="section" id="google">
+<h2>Google<a class="headerlink" href="#google" title="永久链接至标题"></a></h2>
+<p>先后以车机互联 APP AndroidAuto 和 Android Automotive OS 入局汽车 OS 领域。Google 早在 2014 年就开始布局汽车领域，并于当年发布</p>
+<p>车载系统 Android Auto （实际为一款 APP），用户通过 Android Auto 可将手机上的消息、通话、媒体、导航等 应用程序投射到互联的车机上，与苹</p>
+<p>果 CarPlay、华为 Hicar 等类似。于 2019 年谷歌发 布 Android Automotive OS，是一款可直接运行在汽车 IVI 系统上的开源操作系统，用户 可以</p>
+<p>通过 Google Play 下载 Google 助手、Google Map 等应用在汽车上运行，而无需使用 Android 手机。Android Automotive 与手机 Android 类似，其</p>
+<p>源代码库免费和开源，提供 基本的信息娱乐功能，主机厂可通过 Android 的通用框架和 API 来实现自己所需的功能。</p>
+<p>Android Automative 是在原手机 Android 的系统架构基础商替换为与车相关的模 块。主要包括包括：1）Car App：包括 OEM 和第三方开发的 App；2</p>
+<p>）Car API 提供给 汽车 App 特有的接口；3）Car Service：系统中与车相关的服务；4）Vehicle Network Service：汽车的网络服务；5）Vehicle</p>
+<p>HAL：汽车的硬件抽象层描述。区别于之前的开源安卓系 统，车载安卓系统的灵活可定制性和可修改编辑性大大降低，其应用或许受限。沃尔沃 旗下电</p>
+<p>动车品牌 Polestar 将成为首辆搭载车载 Android 系统的车型。</p>
+</div>
+<div class="section" id="id2">
+<h2>华为<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<p>鸿蒙面向全领域，打造独立第三方平台</p>
+<p>华为鸿蒙是面向全场景微内核的分布式 OS，初衷是为了实现跨平台协作的能力。鸿蒙是全世界第一个面向全场景微内核的分布式 OS，其开发的初衷是</p>
+<p>为了提升操作系 统的跨平台能力，包括支持全场景、跨多设备和平台以及应对低时延和高安全性挑战的 能力。鸿蒙系统具有四大特点：分布架构、天</p>
+<p>生流畅、内核安全和生态共享；有三层架 构：第一层是内核，第二层是基础服务，第三层是程序框架。2019 年鸿蒙 OS 1.0 率先 用于智慧屏产品，计</p>
+<p>划从 2020 年起将逐步用于手机、平板、汽车等更多智能设备中。</p>
+<p>鸿蒙自动驾驶 OS 微内核成为我国首个通过 ASIL-D 认证的 OS 内核。2020 年，华 为自动驾驶操作系统内核获得业界 Safety 领域最高等级功能安全</p>
+<p>认证（ISO 26262 ASILD），成为我国首个获得 ASIL-D 认证的操作系统内核；同时，该内核于 2019 年 9 月获 得 Security 领域高等级信息安全认证</p>
+<p>（CC EAL 5+），标志着该系统内核已成为业界首个 拥有 Security &amp; Safety 双高认证的商用 OS 内核。</p>
+<p>根据华为规划，其 E/E 架构方案由智能座舱、智能驾驶、整车控制三个域组成。CDC 智能座舱平台：1）实现汽车和手机在软硬件、应用生态等实现产</p>
+<p>业链共享；2）基 于麒麟芯片构建 IVI 模组，实现产业协同降低硬件成本；3）基于鸿蒙 OS，实现华为“1+8” 生态，实现跨终端的无缝互联。MDC 智</p>
+<p>能驾驶平台：1）发挥华为云（八爪鱼云服务） +AI 优势，打造车云协同的平台；2）建立标准和协议，开放传感器生态；3）支持合作 伙伴开发算法，</p>
+<p>打造差异化方案算法；4）建立对接规范，与主流厂商构建执行器生态。VDC 智能电动平台：面向不同的用户偏好，创造差异化用户体验，引进网络能源</p>
+<p>产业链 和技术优势，打造 mPower 多形态电驱、高效车载充电产品。</p>
+<p>智能驾驶 MDC 平台覆盖从操作系统到云服务的开放式软件栈。根据华为规划，建 立的 MDC 系统平台将遵循 AutoSAR 规范，兼容 OpenCV、OpenCL 等</p>
+<p>第三方算法依赖 库，兼容 POSIX PSE52 API，支持 TensorFlow、Caffe 主流 AI 框架。此外，系统平台将 提供丰富的服务，例如图像数据预处理服务</p>
+<p>，车控数据解析服务等，系统内核时延低于 10us，通信时延低于 1ms。</p>
+</div>
+<div class="section" id="id3">
+<h2>百度<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
+<p>Apollo 深耕多年，静待开花结果</p>
+<p>百度是国内最早布局智能驾驶的领先互联网企业。2013 年百度依托深度学习研究 院成立自动驾驶研究团队，开始布局汽车智能驾驶领域。2017 年，百</p>
+<p>度首次正式发布 Apollo 1.0，并于同年发布基于 Android 定制的对话式人工智能操作系统 DuerOS。2019 年 9 月，百度与一汽合作的 L4 级量产自动</p>
+<p>驾驶出租车 Robotaxi 车队在长沙正式落地运营。在同年 12 月的首届百度 Apollo 生态大会上，推出了 Apollo 5.5 版本，同时支持点 对点城市自动</p>
+<p>驾驶，并发布车路协同、智能车联两大开源平台。2020 年，百度 Apollo 是 国内唯一上榜的 NR 报告国际自动驾驶领导者行列的企业。截至 2019 年</p>
+<p>10 月，百度 Apollo开放平台拥有来自全球超过90个国家的3.6万+名开发者，170+家生态合作伙伴， 开源了 56 万行代码。</p>
+<p>Apollo 已形成自动驾驶、车路协同、智能车联等三大开放平台。在智能车联平台方 面，百度推出的解决方案是小度车载 OS，它是针对车机、导航仪、</p>
+<p>后视镜等座舱设备 打造的定制化智能语音解决方案。自动驾驶平台方面，百度 Apollo 是一个开源的基于 QNX 内核的自动驾驶平台，旨在向汽车行业</p>
+<p>提供一个开放、完整、安全的软件平台，帮 助他们结合车辆和硬件系统，快速搭建一套属于自己完整的自动驾驶系统。百度将开发 环境感知算法、路</p>
+<p>径规划算法、车辆控制算法、车载操作系统的源代码，并提供完整的 开发测试工具，联合市场上成熟的传感器等领域合作伙伴，一同致力于降低无人车</p>
+<p>的研 发门槛。百度合作的车企中，底层 OS 级的合作品牌有奇瑞星途、长城以及福特，集成 百度部分服务和生态的合作品牌有起亚、吉利、奇瑞、威</p>
+<p>马、红旗等。</p>
+</div>
+<div class="section" id="id4">
+<h2>阿里<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
+<p>AliOS 以座舱切入，抢夺应用生态入口</p>
+<p>阿里在移动操作系统领域深耕已久。阿里在 2010 年便开始布局移动端操作系统， 并于 2013 年推出移动终端操作系统 YunOS。随着 5G 和物联网技术</p>
+<p>的发展，阿里由移 动操作系统扩展到跟广泛的物联网领域。在智能汽车方面，于 2015 年 7 月和上汽集团 共同出资成立斑马智行，后来于 2019 年双</p>
+<p>方对其战略重组并将合作领域扩大至汽车出 行服务、自动驾驶和汽车行业云等领域。目前全球有近百万辆搭载斑马系统的互联网汽 车行驶在路上，其</p>
+<p>中包括荣威、名爵、MAXUS、东风雪铁龙、长安福特、观致、宝骏、 斯柯达等品牌。</p>
+<p>AliOS 布局广泛且定位清晰。不同于百度 Apollo，阿里巴巴将 AliOS 定位为面向多 端的物联网操作系统，并不局限于汽车市场；而在智能网联汽车领</p>
+<p>域，又将 AliOS 定位 为 IVI 领域（车载信息娱乐系统）。其前身 YunOS 以 Linux Kernel 为内核，架构类似于Android。系统搭载了自主设计、架构</p>
+<p>、研发的核心虚拟机，并增加了云服务相关模块， 提供与安卓 Dalvik 虚拟机兼容的运行环境。升级后的 AliOS 秉持开源自由的技术路线， 在战略重</p>
+<p>组斑马后，阿里将 YunOS 整体知识产权及业务放入斑马。后者拥有 YunOS 底 层架构代码完整的所有权和使用权，并可授权汽车品牌或其指定合作伙伴</p>
+<p>使用。同时， 斑马网络将进一步向汽车全行业开放，结合 YunOS 操作系统的核心基础技术，让斑马 系统走进更多汽车品牌。</p>
+<p>4.7. 腾讯车联 TAI 入局较晚，座舱生态优势明显</p>
+</div>
+<div class="section" id="id5">
+<h2>腾讯<a class="headerlink" href="#id5" title="永久链接至标题"></a></h2>
+<p>入局较晚，但软件生态优势明显。2017 年 11 月，腾讯在全球合作伙伴大会推 出腾讯车联 AI in Car 系统，并于当年低在广汽集团(16.420,</p>
+<p>0.11, 0.67%)发布的 iSPACE 智联电动概念车上实 现了落地。一年后之后，AI in Car 升级为腾讯车联 TAI 汽车智能系统。2020 年 6 月， 腾讯智慧</p>
+<p>出行发布了 TAI 3.0、全新一代自动驾驶虚拟仿真平台 TAD Sim 2.0，以及汽车 云数字营销解决方案、智慧交通解决方案。目前，腾讯车联已先后与宝</p>
+<p>马、奥迪、奔驰、 广汽、长安、一汽、吉利、东风等车企达成深度战略合作，并落地广汽 GS4、东风柳汽 T5 等多款量产车型。</p>
+<p>腾讯生态优势明显。腾讯车联“AI in Car”系统是腾讯专门为下一代智联网汽车打 造的车联网解决方案，通过整合腾讯的安全、内容、大数据、云计</p>
+<p>算和人工智能等平台 能力。AI in Car 的升级方案腾讯车联 TAI（Tencent Auto Intelligence）汽车智能系统通过 提供轻量化、生态化、跨平台、跨</p>
+<p>终端的工具链构建生态车联网。具体来说，就是通过 车机、云平台、生态三个方面进行构筑。其中车机系统就分为：车载场景服务、车载应 用、场景</p>
+<p>引擎进行展开，车载场景服务是和腾讯小场景进行紧密结合；云平台涵盖了腾 讯车联超级 ID、微信支付平台、AI 场景管理平台、内容管理平台、服务</p>
+<p>管理平台；生 态即涵盖 QQ 音乐、大众点评等腾讯的内外生态</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="%E6%AD%A3%E6%96%87%20-%201%20%E8%BD%A6%E8%BD%BD%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%86%E7%B1%BB.html" class="btn btn-neutral float-left" title="车载操作系统的分类" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="%E6%AD%A3%E6%96%87%20-%203%20%E8%BD%A6%E8%BD%BD%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%89%8D%E6%B2%BF.html" class="btn btn-neutral float-right" title="车载操作系统的前沿" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 云从科技, 张丹枫.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
