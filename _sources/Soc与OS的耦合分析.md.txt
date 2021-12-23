@@ -1,2 +1,0 @@
-# Soc与OS的耦合分析
-TODO(zhangdanfeng@cloudwalk.com):
